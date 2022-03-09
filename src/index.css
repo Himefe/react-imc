@@ -25,6 +25,10 @@ p {
   margin: 0;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
 .inputArea {
   display: block;
   width: 100%;
