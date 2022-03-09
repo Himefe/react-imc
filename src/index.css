@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  margin: 0;
+}
+
+.inputArea {
+  display: block;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.inputArea label {
+  display: block;
+}
+
+.inputArea input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.container {
+  width: 1000px;
+  margin: 60px auto;
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 100px;
+}
+
+.rightSide {
+  flex: 1;
+  display: grid;
+  /* margin-left: 100px; */
+}
+
+.buttonCalc {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: rgb(51, 51, 219);
+  border: none;
+  outline: none;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.buttonArea {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 30px;
+  align-content: center;
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  align-items: center;
+  color: white;
+  filter: grayscale(100%);
+}
+
+.card.marked {
+  filter: grayscale(0);
+}
+
+button {
+  cursor: pointer;
+}
+
+.card > .icon:first-child {
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: #ddd;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.card:nth-of-type(2) > .icon > p {
+  position: relative;
+  bottom: 5px;
+}
+
+.rightSide > .yourIMC {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 1.125rem;
+}
