@@ -19,8 +19,6 @@ const calculoImc = (height: number, weight: number) => {
   if (height !== undefined && weight !== undefined) {
     let imc = weight / (height * height);
 
-    console.log(imc);
-
     for (let index in levels) {
       if (imc >= levels[index].imc[0] && imc <= levels[index].imc[1]) {
         let novaArray = { ...levels[index] };
